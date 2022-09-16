@@ -171,7 +171,10 @@ const Footer = () => {
                   icon={FaTelegramPlane}
                   href="https://t.me/Hentis_one"
                 />
-                <SocialListItem icon={FaLinkedin} href="https://discord.com" />
+                <SocialListItem
+                  icon={FaLinkedin}
+                  href="https://www.linkedin.com/company/hentis-one/"
+                />
                 <SocialListItem
                   icon={FaGithub}
                   href="https://github.com/hentis-one"

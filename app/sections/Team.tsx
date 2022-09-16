@@ -1,10 +1,10 @@
 import { Box, Container, Grid, GridItem, Heading } from "@chakra-ui/react";
 import Person from "../components/Person";
 
-import johnImage from "../assets/img/team/john-olumide.png";
-import atosImage from "../assets/img/team/atos-tiger.png";
-import joshuaImage from "../assets/img/team/joshua-adeolu.png";
 import adrienImage from "../assets/img/team/adrien-bhol.png";
+import atosImage from "../assets/img/team/atos-tiger.png";
+import johnImage from "../assets/img/team/john-olumide.png";
+import joshuaImage from "../assets/img/team/joshua-adeolu.png";
 import nickImage from "../assets/img/team/nick-jackson.png";
 import tiagoImage from "../assets/img/team/tiago-emanuel.png";
 
@@ -43,11 +43,7 @@ const Team = () => (
           />
         </GridItem>
         <GridItem w="100%">
-          <Person
-            name="Atos Tiger"
-            position="CTO"
-            image={atosImage.src}
-          />
+          <Person name="Atos Tiger" position="CTO" image={atosImage.src} />
         </GridItem>
         <GridItem w="100%">
           <Person
@@ -62,7 +58,6 @@ const Team = () => (
             name="Adrien Bhol"
             position="Community Mod"
             image={adrienImage.src}
-
           />
         </GridItem>
         <GridItem w="100%">
@@ -78,6 +73,7 @@ const Team = () => (
             name="Tiago Emanuel"
             position="Advisor"
             image={tiagoImage.src}
+            linkedinURL={"https://www.linkedin.com/in/tiagotpratas"}
           />
         </GridItem>
       </Grid>

@@ -6,7 +6,7 @@ import Features from "../../sections/Features";
 import Hero from "../../sections/Hero";
 import RoadMap from "../../sections/RoadMap";
 import Team from "../../sections/Team";
-import Tires from "../../sections/Tires";
+import Tiers from "../../sections/Tiers";
 import BaseLayout from "../Layouts/BaseLayout";
 
 const Home: NextPage = () => {
@@ -18,7 +18,7 @@ const Home: NextPage = () => {
       <BaseLayout>
         <Hero />
         <Features />
-        <Tires />
+        <Tiers />
         <RoadMap />
         <Team />
         <BackedBy />

@@ -6,7 +6,8 @@ import {
   GridItem,
   Heading,
   Image,
-  Text,
+  Link,
+  Text
 } from "@chakra-ui/react";
 
 import swapImage from "../assets/img/interface/swap.png";
@@ -62,6 +63,13 @@ const EarlyAccess = () => (
             try and join our journey. Hentis beta test will be available soon!.
           </Text>
           <Button
+            as={Link}
+            href="/#subscribe"
+            sx={{
+              ":hover": {
+                textDecor: "none",
+              },
+            }}
             colorScheme="primary"
             borderRadius={"full"}
             p={{ base: "16px 80px", sm: "24px 80px", lg: "32px 80px" }}

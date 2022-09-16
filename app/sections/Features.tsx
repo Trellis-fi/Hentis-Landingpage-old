@@ -1,7 +1,7 @@
 import { Box, Container, Grid, GridItem, Heading } from "@chakra-ui/react";
 
 import launchpadImage from "../assets/img/features/launchpad.gif";
-import lendingProtocalImage from "../assets/img/features/lending-protocal.gif";
+import lendingProtocolImage from "../assets/img/features/lending-protocol.gif";
 import metadexImage from "../assets/img/features/metadex.gif";
 import FeatureItem from "../components/FeatureItem";
 
@@ -46,8 +46,8 @@ const Features = () => (
         </GridItem>
         <GridItem w="100%">
           <FeatureItem
-            title="Lending Protocal"
-            image={lendingProtocalImage.src}
+            title="Lending Protocol"
+            image={lendingProtocolImage.src}
           >
             Permisionless all-in-one, peer-peer Defi lending protocol on Solana
           </FeatureItem>

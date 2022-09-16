@@ -5,6 +5,7 @@ import {
   Grid,
   GridItem,
   Heading,
+  Link,
   Text,
 } from "@chakra-ui/react";
 
@@ -16,7 +17,7 @@ import hen1Image from "../assets/img/hens/hen1.png";
 import hen2Image from "../assets/img/hens/hen2.png";
 import hen3Image from "../assets/img/hens/hen3.png";
 
-const Tires = () => (
+const Tiers = () => (
   <Box py={{ base: 5, lg: 12 }} bgColor="black" color="white">
     <Container
       maxW={{
@@ -33,7 +34,7 @@ const Tires = () => (
         mb={{ base: 8, lg: 24 }}
         fontSize={{ base: "30px", sm: "40px", lg: "55px" }}
       >
-        Tires
+        TIERS
       </Heading>
       <Grid
         templateColumns={{
@@ -74,8 +75,8 @@ const Tires = () => (
               {({ isActive, isPrev, isNext }) => {
                 return (
                   <Hen
-                    title={"Guaranteed Allocation"}
-                    price={5000}
+                    title={"Chance to win Allocation"}
+                    price={1000}
                     image={hen1Image.src}
                     isActive={isActive}
                     isPrev={isPrev}
@@ -87,7 +88,7 @@ const Tires = () => (
             <SwiperSlide>
               {({ isActive, isPrev, isNext }) => (
                 <Hen
-                  title={"Guaranteed Allocation"}
+                  title={"Allocation Guaranteed"}
                   price={5000}
                   image={hen2Image.src}
                   isActive={isActive}
@@ -100,7 +101,7 @@ const Tires = () => (
               {({ isActive, isPrev, isNext }) => (
                 <Hen
                   title={"Guaranteed Allocation"}
-                  price={5000}
+                  price={10000}
                   image={hen3Image.src}
                   isActive={isActive}
                   isPrev={isPrev}
@@ -131,9 +132,17 @@ const Tires = () => (
             whitelisted to participate in token sales.
           </Text>
           <Button
+            as={Link}
+            href="https://hentis.medium.com"
+            target="_blank"
             colorScheme="primary"
             borderRadius={"full"}
             minW={48}
+            sx={{
+              ":hover": {
+                textDecor: "none",
+              },
+            }}
             p={{ base: "18px 36px", lg: "24px 48px" }}
             fontSize={{ base: "15px", lg: "20px" }}
             fontWeight={"500"}
@@ -146,4 +155,4 @@ const Tires = () => (
   </Box>
 );
 
-export default Tires;
+export default Tiers;

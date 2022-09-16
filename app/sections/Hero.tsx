@@ -13,7 +13,7 @@ import {
 const Hero = () => {
   return (
     <>
-      <Box position={"relative"}>
+      <Box position={"relative"} id="subscribe">
         <Box
           top="0"
           right="0"

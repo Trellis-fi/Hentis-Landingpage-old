@@ -1,4 +1,4 @@
-import { Box, Image } from "@chakra-ui/react";
+import { AspectRatio, Box, Image } from "@chakra-ui/react";
 
 const Sponser = ({ image, name }: { image: string; name: string }) => (
   <Box
@@ -11,7 +11,10 @@ const Sponser = ({ image, name }: { image: string; name: string }) => (
       xl: "24px 49px",
     }}
   >
-    <Image src={image} alt={name} mx="auto" />
+    {/* <Image src={image} alt={name} mx="auto" /> */}
+    <AspectRatio ratio={8 / 3}>
+      <Box></Box>
+    </AspectRatio>
   </Box>
 );
 

@@ -33,7 +33,7 @@ const Person = ({
         borderRadius="50%"
         objectFit="cover"
         css={{
-          aspectRatio: "1 / 1",
+          aspectRatio: "1/1",
         }}
         width={{
           base: "100px",

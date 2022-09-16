@@ -20,7 +20,7 @@ const RoadMapItem = ({
     />
     <Box p={{ base: "21px 24px 21px 32px", lg: "29px 32px 29px 52px" }}>
       <Heading fontSize={{ base: "20px", lg: "25px" }}>{title}</Heading>
-      <Box fontSize={{ base: "20px", lg: "25px" }}>{children}</Box>
+      <Box fontSize={{ base: "15px", sm: "20px", lg: "25px" }}>{children}</Box>
     </Box>
   </Box>
 );
