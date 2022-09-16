@@ -1,24 +1,24 @@
 import {
-    AspectRatio,
-    Box,
-    Container,
-    Heading,
-    HStack,
-    Icon,
-    Image,
-    Link,
-    List,
-    ListItem,
-    Stack
+  AspectRatio,
+  Box,
+  Container,
+  Heading,
+  HStack,
+  Icon,
+  Image,
+  Link,
+  List,
+  ListItem,
+  Stack,
 } from "@chakra-ui/react";
 import { ReactNode } from "react";
 import {
-    FaDiscord,
-    FaGithub,
-    FaLinkedin,
-    FaMedium,
-    FaTelegramPlane,
-    FaTwitter
+  FaDiscord,
+  FaGithub,
+  FaLinkedin,
+  FaMedium,
+  FaTelegramPlane,
+  FaTwitter,
 } from "react-icons/fa";
 
 import logoImage from "../assets/img/logo.png";
@@ -42,9 +42,11 @@ const NavList = ({ children }: { children: ReactNode }) => (
 const NavListItem = ({
   href,
   children,
+  isExternal = false,
 }: {
   href?: string;
   children: ReactNode;
+  isExternal?: boolean;
 }) => (
   <ListItem>
     <Link
@@ -52,6 +54,8 @@ const NavListItem = ({
       _hover={{
         color: "whiteAlpha.800",
       }}
+      href={href}
+      target={isExternal ? "_blank" : "_self"}
       fontSize={{ base: "16px" }}
     >
       {children}
@@ -72,6 +76,8 @@ const SocialListItem = ({ href, icon }: { href?: string; icon: any }) => (
       _hover={{
         color: "whiteAlpha.800",
       }}
+      target={"_blank"}
+      href={href}
       display={"block"}
       height={{ base: "23px", sm: "30px" }}
       lineHeight={1}
@@ -142,20 +148,38 @@ const Footer = () => {
                 </Heading>
               </HStack>
               <NavList>
-                <NavListItem href="/contact">Contact Us</NavListItem>
-                <NavListItem href="/docs">Document</NavListItem>
-                <NavListItem href="/blog">Blog</NavListItem>
+                <NavListItem href="mailto:contact@hentis.one">
+                  Contact Us
+                </NavListItem>
+                <NavListItem href="https://docs.hentis.one" isExternal>
+                  Document
+                </NavListItem>
+                <NavListItem href="http://hentis.medium.com" isExternal>
+                  Blog
+                </NavListItem>
               </NavList>
               <SocialList>
-                <SocialListItem icon={FaDiscord} href="https://discord.com" />
-                <SocialListItem icon={FaTwitter} href="https://discord.com" />
+                <SocialListItem
+                  icon={FaDiscord}
+                  href="https://discord.gg/NBnhV8tsjj"
+                />
+                <SocialListItem
+                  icon={FaTwitter}
+                  href="https://twitter.com/Hentis_one"
+                />
                 <SocialListItem
                   icon={FaTelegramPlane}
-                  href="https://discord.com"
+                  href="https://t.me/Hentis_one"
                 />
                 <SocialListItem icon={FaLinkedin} href="https://discord.com" />
-                <SocialListItem icon={FaGithub} href="https://discord.com" />
-                <SocialListItem icon={FaMedium} href="https://discord.com" />
+                <SocialListItem
+                  icon={FaGithub}
+                  href="https://github.com/hentis-one"
+                />
+                <SocialListItem
+                  icon={FaMedium}
+                  href="http://hentis.medium.com"
+                />
               </SocialList>
             </Stack>
           </Container>

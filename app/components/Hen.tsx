@@ -30,6 +30,11 @@ const Hen = ({
       base: isActive
         ? "translateX(0)"
         : isNext
+        ? "translateX(-88px)"
+        : "translateX(88px)",
+      sm: isActive
+        ? "translateX(0)"
+        : isNext
         ? "translateX(-148px)"
         : "translateX(148px)",
     }}

@@ -35,23 +35,43 @@ const Team = () => (
         gap={{ base: 6, lg: 10 }}
       >
         <GridItem w="100%">
-          <Person name="John Olumide" position="CEO" image={johnImage.src} />
+          <Person
+            name="John Olumide"
+            position="CEO"
+            image={johnImage.src}
+            linkedinURL={"https://www.linkedin.com/in/john-olumide"}
+          />
         </GridItem>
         <GridItem w="100%">
-          <Person name="Atos Tiger" position="CTO" image={atosImage.src} />
+          <Person
+            name="Atos Tiger"
+            position="CTO"
+            image={atosImage.src}
+          />
         </GridItem>
         <GridItem w="100%">
-          <Person name="Joshua Adeolu" position="BDM" image={joshuaImage.src} />
+          <Person
+            name="Joshua Adeolu"
+            position="BDM"
+            image={joshuaImage.src}
+            linkedinURL={"https://www.linkedin.com/in/joshua-adeolu"}
+          />
         </GridItem>
         <GridItem w="100%">
           <Person
             name="Adrien Bhol"
             position="Community Mod"
             image={adrienImage.src}
+
           />
         </GridItem>
         <GridItem w="100%">
-          <Person name="Nick Jackson" position="CFO" image={nickImage.src} />
+          <Person
+            name="Nick Jackson"
+            position="CFO"
+            image={nickImage.src}
+            linkedinURL={"https://www.linkedin.com/in/nick-j-jackson"}
+          />
         </GridItem>
         <GridItem w="100%">
           <Person

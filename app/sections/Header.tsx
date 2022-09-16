@@ -28,13 +28,17 @@ const NavList = ({ children }: { children: ReactNode }) => (
 const NavListItem = ({
   href,
   children,
+  isExternal = false,
 }: {
   href?: string;
   children: ReactNode;
+  isExternal?: boolean;
 }) => (
   <ListItem>
     <Link
       color="white"
+      href={href}
+      target={isExternal ? "_blank" : "_self"}
       _hover={{
         color: "whiteAlpha.800",
       }}
@@ -58,6 +62,8 @@ const SocialListItem = ({ href, icon }: { href?: string; icon: any }) => (
       _hover={{
         color: "whiteAlpha.800",
       }}
+      href={href}
+      target={"_blank"}
       display={"block"}
       height={{ base: "23px", md: "30px" }}
       lineHeight={1}
@@ -124,16 +130,26 @@ const Header = () => {
                 }}
               >
                 <NavList>
-                  <NavListItem href="/litepaper">Litepaper</NavListItem>
-                  <NavListItem href="/blog">Blog</NavListItem>
+                  <NavListItem href="/Hentis-Pitch-deck.pdf" isExternal>
+                    Litepaper
+                  </NavListItem>
+                  <NavListItem href="https://hentis.medium.com" isExternal>
+                    Blog
+                  </NavListItem>
                 </NavList>
                 <SocialList>
-                  <SocialListItem icon={FaDiscord} href="https://discord.com" />
+                  <SocialListItem
+                    icon={FaDiscord}
+                    href="https://discord.gg/NBnhV8tsjj"
+                  />
                   <SocialListItem
                     icon={FaTelegramPlane}
-                    href="https://discord.com"
+                    href="https://t.me/Hentis_one"
                   />
-                  <SocialListItem icon={FaTwitter} href="https://discord.com" />
+                  <SocialListItem
+                    icon={FaTwitter}
+                    href="https://twitter.com/Hentis_one"
+                  />
                 </SocialList>
               </HStack>
             </StackItem>

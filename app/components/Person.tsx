@@ -40,35 +40,37 @@ const Person = ({
           md: "193px",
         }}
       />
-      <Box
-        bgGradient={"conic(from 180deg, #1204B7, #2BE3D8)"}
-        pos="absolute"
-        left={{ base: "55%", md: "60%" }}
-        top={{ base: "55%", md: "60%" }}
-        width={{ base: "27px", md: "50px" }}
-        height={{ base: "27px", md: "50px" }}
-        borderRadius="full"
-        padding="1px"
-      >
-        <Link
-          display={"block"}
-          target={"_blank"}
-          href={linkedinURL}
-          bgColor="whiteAlpha.800"
-          width={{ base: "25px", md: "48px" }}
-          height={{ base: "25px", md: "48px" }}
-          textAlign={"center"}
-          borderRadius="48px"
+      {linkedinURL && (
+        <Box
+          bgGradient={"conic(from 180deg, #1204B7, #2BE3D8)"}
+          pos="absolute"
+          left={{ base: "55%", md: "60%" }}
+          top={{ base: "55%", md: "60%" }}
+          width={{ base: "27px", md: "50px" }}
+          height={{ base: "27px", md: "50px" }}
+          borderRadius="full"
+          padding="1px"
         >
-          <Icon
-            as={FaLinkedin}
-            color={"primary.500"}
-            fontSize={{ base: "15px", md: "22px" }}
-            lineHeight={{ base: "25px", md: "48px" }}
+          <Link
+            display={"block"}
+            target={"_blank"}
+            href={linkedinURL}
+            bgColor="whiteAlpha.800"
+            width={{ base: "25px", md: "48px" }}
             height={{ base: "25px", md: "48px" }}
-          />
-        </Link>
-      </Box>
+            textAlign={"center"}
+            borderRadius="48px"
+          >
+            <Icon
+              as={FaLinkedin}
+              color={"primary.500"}
+              fontSize={{ base: "15px", md: "22px" }}
+              lineHeight={{ base: "25px", md: "48px" }}
+              height={{ base: "25px", md: "48px" }}
+            />
+          </Link>
+        </Box>
+      )}
     </Box>
     <Heading
       fontWeight={"500"}

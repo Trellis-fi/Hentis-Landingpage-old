@@ -17,6 +17,10 @@ const themeConfig = {
   },
   styles: {
     global: (props: any) => ({
+      ":root": {
+        "--swiper-theme-color": "white",
+        "--swiper-navigation-size": "24px",
+      },
       "html, body": {
         overflowX: "hidden",
         color: "black",

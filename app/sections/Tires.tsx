@@ -42,6 +42,14 @@ const Tires = () => (
         }}
         alignItems="center"
         gap={12}
+        sx={{
+          ".swiper-button-next, .swiper-button-prev": {
+            border: "2px solid var(--swiper-theme-color)",
+            borderRadius: "var(--chakra-radii-full)",
+            width: "48px",
+            height: "48px",
+          },
+        }}
       >
         <GridItem colSpan={5}>
           <Swiper
@@ -59,6 +67,7 @@ const Tires = () => (
               modifier: 2,
               slideShadows: false,
             }}
+            navigation
             modules={[EffectCoverflow, Navigation]}
           >
             <SwiperSlide>
