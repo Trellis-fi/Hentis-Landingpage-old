@@ -21,8 +21,6 @@ import {
   FaTwitter,
 } from "react-icons/fa";
 
-import logoImage from "../assets/img/logo.png";
-
 const NavList = ({ children }: { children: ReactNode }) => (
   <Stack
     as={List}
@@ -130,7 +128,7 @@ const Footer = () => {
             >
               <HStack>
                 <Image
-                  src={logoImage.src}
+                  src={"/apple-touch-icon.png"}
                   alt="Hentis"
                   width={{
                     base: "30px",

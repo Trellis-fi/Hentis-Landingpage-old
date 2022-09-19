@@ -11,7 +11,6 @@ import {
 } from "@chakra-ui/react";
 import { ReactNode, useEffect, useState } from "react";
 import { FaDiscord, FaTelegramPlane, FaTwitter } from "react-icons/fa";
-import logoImage from "../assets/img/logo.png";
 
 const NavList = ({ children }: { children: ReactNode }) => (
   <HStack
@@ -116,7 +115,7 @@ const Header = () => {
             <StackItem>
               <Link href="/">
                 <Image
-                  src={logoImage.src}
+                  src={"/apple-touch-icon.png"}
                   w={{ base: "35px", md: "55px", lg: "70px" }}
                   alt="Hentis"
                 />
