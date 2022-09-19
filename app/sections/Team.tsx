@@ -39,7 +39,7 @@ const Team = () => (
             name="John Olumide"
             position="CEO"
             image={johnImage.src}
-            linkedinURL={"https://www.linkedin.com/in/john-olumide"}
+            linkedinURL={"https://www.linkedin.com/in/john-olumide-4377031b6"}
           />
         </GridItem>
         <GridItem w="100%">
@@ -50,7 +50,7 @@ const Team = () => (
             name="Joshua Adeolu"
             position="BDM"
             image={joshuaImage.src}
-            linkedinURL={"https://www.linkedin.com/in/joshua-adeolu"}
+            linkedinURL={"https://www.linkedin.com/in/joshua-adeolu-023695186"}
           />
         </GridItem>
         <GridItem w="100%">

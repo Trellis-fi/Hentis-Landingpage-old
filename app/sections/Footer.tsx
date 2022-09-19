@@ -126,7 +126,7 @@ const Footer = () => {
                 base: "column",
                 lg: "row",
               }}
-              spacing="40px"
+              spacing={{ base: "30px", lg: "40px" }}
             >
               <HStack>
                 <Image
@@ -134,14 +134,16 @@ const Footer = () => {
                   alt="Hentis"
                   width={{
                     base: "30px",
-                    sm: "70px",
+                    sm: "50px",
+                    md: "70px",
                   }}
                 />
                 <Heading
                   color="white"
                   fontSize={{
                     base: "20px",
-                    sm: "40px",
+                    sm: "30px",
+                    md: "40px",
                   }}
                 >
                   Hentis.one
