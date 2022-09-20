@@ -7,8 +7,10 @@ import {
   Heading,
   Image,
   Link,
-  Text
+  Text,
 } from "@chakra-ui/react";
+import AnchorLink from 'react-anchor-link-smooth-scroll'
+
 
 import swapImage from "../assets/img/interface/swap.png";
 
@@ -63,8 +65,8 @@ const EarlyAccess = () => (
             try and join our journey. Hentis beta test will be available soon!.
           </Text>
           <Button
-            as={Link}
-            href="/#subscribe"
+            as={AnchorLink}
+            href="#subscribe"
             sx={{
               ":hover": {
                 textDecor: "none",
