@@ -61,8 +61,7 @@ const Hero = () => {
               textAlign="center"
               mb="4"
             >
-              One-stop decentralized finance application platform built on
-              solana.
+              One-stop decentralized finance application platform built on Sui.
             </Text>
             <Grid
               templateColumns={{

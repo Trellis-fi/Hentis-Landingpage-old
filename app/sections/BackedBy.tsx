@@ -1,12 +1,12 @@
 import { Box, Container, Grid, GridItem, Heading } from "@chakra-ui/react";
-import Person from "../components/Person";
 
-import solanaImage from "../assets/img/backedby/solana.png";
-import kucoinImage from "../assets/img/backedby/kucoin.png";
+// import solanaImage from "../assets/img/backedby/solana.png";
+import alamedaResearchImage from "../assets/img/backedby/alameda-research.png";
 import dweb3Image from "../assets/img/backedby/dweb3.png";
+import kucoinImage from "../assets/img/backedby/kucoin.png";
 import newaveImage from "../assets/img/backedby/newave.png";
 import rarestoneImage from "../assets/img/backedby/rarestone.png";
-import alamedaResearchImage from "../assets/img/backedby/alameda-research.png";
+import suiImage from "../assets/img/backedby/sui.png";
 
 import Sponser from "../components/Sponser";
 
@@ -45,7 +45,7 @@ const BackedBy = () => (
         mb={{ sm: 4, md: 8 }}
       >
         <GridItem w="100%" px={{ base: 0, md: 5, lg: 8 }}>
-          <Sponser name="Solana" image={solanaImage.src} />
+          <Sponser name="Sui" image={suiImage.src} show />
         </GridItem>
         <GridItem w="100%" px={{ base: 0, md: 5, lg: 8 }}>
           <Sponser name="Kucoin" image={kucoinImage.src} />

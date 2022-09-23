@@ -9,8 +9,7 @@ import {
   Link,
   Text,
 } from "@chakra-ui/react";
-import AnchorLink from 'react-anchor-link-smooth-scroll'
-
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 import swapImage from "../assets/img/interface/swap.png";
 
@@ -38,11 +37,13 @@ const EarlyAccess = () => (
             <Image
               src={swapImage.src}
               alt="Early Access"
-              width={"80%"}
-              transform={{
-                base: "rotate(-17deg) translateX(30px)",
-                sm: "rotate(-17deg) translateX(50px)",
-              }}
+              width={"100%"}
+              transform={
+                {
+                  // base: "rotate(-17deg) translateX(30px)",
+                  // sm: "rotate(-17deg) translateX(50px)",
+                }
+              }
             />
           </Box>
         </GridItem>

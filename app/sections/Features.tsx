@@ -35,13 +35,13 @@ const Features = () => (
         <GridItem w="100%">
           <FeatureItem title="Meta DEX" image={metadexImage.src}>
             Advanced DEX with fee discounts, Light-speed swap, friction-less
-            yields and low gas fee.
+            yields and low gas fee on Sui
           </FeatureItem>
         </GridItem>
         <GridItem w="100%">
           <FeatureItem title="Launchpad" image={launchpadImage.src}>
-            Pioneering launchpad that strives to assist projects with community
-            fundraising and marketing strategy
+            Pioneering launchpad that strives to assist projects on Sui with
+            community fundraising and marketing strategy
           </FeatureItem>
         </GridItem>
         <GridItem w="100%">
@@ -49,7 +49,7 @@ const Features = () => (
             title="Lending Protocol"
             image={lendingProtocolImage.src}
           >
-            Permisionless all-in-one, peer-peer Defi lending protocol on Solana
+            Permisionless all-in-one, peer-peer Defi lending protocol on Sui
           </FeatureItem>
         </GridItem>
       </Grid>
