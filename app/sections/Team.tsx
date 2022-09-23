@@ -39,7 +39,7 @@ const Team = () => (
             name="John Olumide"
             position="CEO"
             image={johnImage.src}
-            linkedinURL={"https://www.linkedin.com/in/john-olumide-4377031b6"}
+            // linkedinURL={"https://www.linkedin.com/in/john-olumide-4377031b6"}
           />
         </GridItem>
         <GridItem w="100%">
@@ -50,7 +50,7 @@ const Team = () => (
             name="Joshua Adeolu"
             position="BDM"
             image={joshuaImage.src}
-            linkedinURL={"https://www.linkedin.com/in/joshua-adeolu-023695186"}
+            // linkedinURL={"https://www.linkedin.com/in/joshua-adeolu-023695186"}
           />
         </GridItem>
         <GridItem w="100%">
@@ -65,7 +65,7 @@ const Team = () => (
             name="Nick Jackson"
             position="CFO"
             image={nickImage.src}
-            linkedinURL={"https://www.linkedin.com/in/nick-j-jackson"}
+            // linkedinURL={"https://www.linkedin.com/in/nick-j-jackson"}
           />
         </GridItem>
         <GridItem w="100%">
@@ -73,7 +73,7 @@ const Team = () => (
             name="Tiago Emanuel"
             position="Advisor"
             image={tiagoImage.src}
-            linkedinURL={"https://www.linkedin.com/in/tiagotpratas"}
+            // linkedinURL={"https://www.linkedin.com/in/tiagotpratas"}
           />
         </GridItem>
       </Grid>

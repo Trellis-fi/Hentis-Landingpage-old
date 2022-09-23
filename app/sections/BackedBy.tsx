@@ -33,7 +33,7 @@ const BackedBy = () => (
         mb={{ base: 8, md: 14, lg: 20 }}
         fontSize={{ base: "30px", sm: "40px", lg: "55px" }}
       >
-        Backed by
+        PARTNERS
       </Heading>
       <Grid
         templateColumns={{

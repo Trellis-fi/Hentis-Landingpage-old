@@ -49,7 +49,9 @@ const Features = () => (
             title="Lending Protocol"
             image={lendingProtocolImage.src}
           >
-            Permisionless all-in-one, peer-peer Defi lending protocol on Sui
+            Permisionless all-in-one, peer-peer Defi lending protocol on Sui.
+            Lend supported assets on Hentis Vault and earn incredible organic
+            yields.
           </FeatureItem>
         </GridItem>
       </Grid>

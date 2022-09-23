@@ -25,18 +25,18 @@ const Hen = ({
       lg: isActive
         ? "translateX(0)"
         : isNext
-        ? "translateX(-138px)"
-        : "translateX(138px)",
+        ? "translateX(-224px)"
+        : "translateX(224px)",
       base: isActive
         ? "translateX(0)"
         : isNext
-        ? "translateX(-88px)"
-        : "translateX(88px)",
+        ? "translateX(-120px)"
+        : "translateX(120px)",
       sm: isActive
         ? "translateX(0)"
         : isNext
-        ? "translateX(-148px)"
-        : "translateX(148px)",
+        ? "translateX(-224px)"
+        : "translateX(224px)",
     }}
     transition={"transform 0.2s"}
     borderRadius="2xl"
