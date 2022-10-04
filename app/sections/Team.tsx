@@ -1,8 +1,8 @@
 import { Box, Container, Grid, GridItem, Heading } from "@chakra-ui/react";
 import Person from "../components/Person";
 
-import adrienImage from "../assets/img/team/adrien-bhol.png";
-import atosImage from "../assets/img/team/atos-tiger.png";
+import jingImage from "../assets/img/team/zh-jing.png";
+import mickeyImage from "../assets/img/team/mickey-iron.png";
 import johnImage from "../assets/img/team/john-olumide.png";
 import joshuaImage from "../assets/img/team/joshua-adeolu.png";
 import nickImage from "../assets/img/team/nick-jackson.png";
@@ -39,33 +39,39 @@ const Team = () => (
             name="John Olumide"
             position="CEO"
             image={johnImage.src}
-            // linkedinURL={"https://www.linkedin.com/in/john-olumide-4377031b6"}
+            linkedinURL={"https://www.linkedin.com/in/john-olumide-4377031b6"}
           />
         </GridItem>
         <GridItem w="100%">
-          <Person name="Atos Tiger" position="CTO" image={atosImage.src} />
+          <Person
+            name="Nick Jackson"
+            position="CTO"
+            image={nickImage.src}
+            linkedinURL={"https://www.linkedin.com/in/nick-j-jackson"}
+          />
         </GridItem>
         <GridItem w="100%">
           <Person
             name="Joshua Adeolu"
             position="BDM"
             image={joshuaImage.src}
-            // linkedinURL={"https://www.linkedin.com/in/joshua-adeolu-023695186"}
+            linkedinURL={"https://www.linkedin.com/in/joshua-adeolu-023695186"}
           />
         </GridItem>
         <GridItem w="100%">
           <Person
-            name="Adrien Bhol"
-            position="Community Mod"
-            image={adrienImage.src}
+            name="Atos Tiger"
+            position="CMO"
+            image={mickeyImage.src}
+            linkedinURL="https://www.linkedin.com/in/micky-cmo"
           />
         </GridItem>
         <GridItem w="100%">
           <Person
-            name="Nick Jackson"
-            position="CFO"
-            image={nickImage.src}
-            // linkedinURL={"https://www.linkedin.com/in/nick-j-jackson"}
+            name="Zh Jing"
+            position="CPO"
+            image={jingImage.src}
+            linkedinURL="https://www.linkedin.com/in/zh-jing-150805200"
           />
         </GridItem>
         <GridItem w="100%">
@@ -73,7 +79,7 @@ const Team = () => (
             name="Tiago Emanuel"
             position="Advisor"
             image={tiagoImage.src}
-            // linkedinURL={"https://www.linkedin.com/in/tiagotpratas"}
+            linkedinURL={"https://www.linkedin.com/in/tiagotpratas"}
           />
         </GridItem>
       </Grid>
