@@ -105,6 +105,7 @@ const Footer = () => {
         </AspectRatio>
         <Box
           bgColor="black"
+          color="white"
           py={{
             base: "50px",
             lg: "100px",
@@ -185,6 +186,7 @@ const Footer = () => {
                 />
               </SocialList>
             </Stack>
+            <Box paddingTop="6">© 2022 Hentis.one. All rights reserved.</Box>
           </Container>
         </Box>
       </Box>
