@@ -9,7 +9,7 @@ class MyDocument extends Document {
           <title>Hentis</title>
           <meta
             name="description"
-            content="One-stop decentralized finance application platform built on solana."
+            content="One-stop decentralized finance application platform built on sui."
           />
           <link rel="icon" href="/favicon.ico" />
           <link
