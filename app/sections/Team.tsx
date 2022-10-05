@@ -53,7 +53,7 @@ const Team = () => (
         <GridItem w="100%">
           <Person
             name="Joshua Adeolu"
-            position="BDM"
+            position="COO"
             image={joshuaImage.src}
             linkedinURL={"https://www.linkedin.com/in/joshua-adeolu-023695186"}
           />
